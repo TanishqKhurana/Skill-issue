@@ -1,5 +1,7 @@
 # Skill-issue
 Our adaptive learning platform for children ages 4 to 11 offers personalized educational videos, science activities, and mini-games. Designed with a machine learning model, it adapts to each child's needs, making learning engaging and effective.
+
+
 Here are some stills from our Platform
 ![Landing Page](https://github.com/user-attachments/assets/5760553d-16b5-4c54-b881-a7f5c18f4055)
 ![Also Landing Page](https://github.com/user-attachments/assets/13a111a1-bfd9-47fb-9d7a-eddfd6689cac)
