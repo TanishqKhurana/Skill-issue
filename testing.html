@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-Taking Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <p>EduLearn</p>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="./airshifter.html">Home</a></li>
+                    <li><a href="./airshifter.html">Resources</a></li>
+                    <li><a href="./airshifter.html">Education</a></li>
+                    <li><a href="./airshifter.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="overlay"></div>
+            <div class="icon">
+                <a class="navbar-brand" href="./contact.html">
+                    <img src="search.png" alt="search">
+                </a>
+            </div>
+        </div>
+            
+    </header>
+    <br>
+    <br>
+    <Br>
+    <br>
+    <br>
+    <h1 class="sir">Online Assesment for Autism</h1>
+    <br>
+    <h3 class="instructions">Some Instructions before you take the test</h3>
+    <br>
+    <p class="instructions"> 1. Please ensure that the test is taken under the supervision
+        of an adult, such as a parent, guardian, or caregiver.<br></p>
+    <br>
+    <p class="instructions">2. When answering the above questions please consider how much the statements apply to you.
+    </p>
+    <br>
+    <p class="instructions">3. Ensure that all questions are answered. Incomplete responses may affect the accuracy of
+        the assessment.</p>
+    <br>
+    <p class="instructions">4. This test is for informational purposes only. For a formal diagnosis or if there are
+        concerns about autism, please consult a qualified healthcare professional with the guidance of your supervising
+        adult.</p>
+    <br>
+    <p class="instructions">5. Your responses are confidential and will be used only for the purpose of assessment. We
+        adhere to strict privacy and data protection standards.</p>
+    <br><br><br><br><br><br>
+    <form id="testForm">
+        <div class="form-container">
+            <h2>Test Questions</h2>
+
+            <!-- Question 1 -->
+            <div class="form-group question" id="question1">
+                <label>1. Does your child look at you when you call his/her name?
+                </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q1', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q1', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="form-group question" id="question2" style="display:none;">
+                <label>2.How easy is it for you to get eye contact with your child? </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q2', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q2', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="form-group question" id="question3" style="display:none;">
+                <label>3.Does your child point to indicate that s/he wants something? (e.g. a toy that is
+                    out of reach) </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q3', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q3', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="form-group question" id="question4" style="display:none;">
+                <label>4.Does your child point to share interest with you? (e.g. poin9ng at an
+                    interes9ng sight)
+                </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q4', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q4', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="form-group question" id="question5" style="display:none;">
+                <label>5. Does your child pretend? (e.g. care for dolls, talk on a toy phone) </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q5', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q5', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="form-group question" id="question6" style="display:none;">
+                <label>6.Does your child follow where you’re looking?
+                </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q6', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q6', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="form-group question" id="question7" style="display:none;">
+                <label>7.If you or someone else in the family is visibly upset, does your child show signs
+                    of wan9ng to comfort them? (e.g. stroking hair, hugging them)
+                </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q7', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q7', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="form-group question" id="question8" style="display:none;">
+                <label>8.Would you describe your child’s first words as: </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q8', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q8', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="form-group question" id="question9" style="display:none;">
+                <label>9.Does your child use simple gestures? (e.g. wave goodbye)
+                </label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q9', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q9', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="form-group question" id="question10" style="display:none;">
+                <label>10.Does your child stare at nothing with no apparent purpose?</label>
+                <div class="answer-options">
+                    <button type="button" onclick="recordAnswer('q10', 'Yes')">Yes</button>
+                    <button type="button" onclick="recordAnswer('q10', 'No')">No</button>
+                </div>
+            </div>
+
+            <!-- Final submit button -->
+            <button type="submit" id="submitButton" style="display:none;">Get Results</button>
+    </form>
+    </div>
+
+    <div class="form-container">
+        <!-- Loading Bar -->
+        <div class="loading-bar-container">
+            <div id="loadingBar" class="loading-bar"></div>
+        </div>
+</div>
+        <div><p class="end">The above 30 questions may be useful to understand if you are experiencing some of the
+            common behaviours and thoughts associated with being on the Autistic Spectrum. The questions are based on an
+            evidence-based screening tool – the Autism Spectrum Quotient – but are indicative only and do not form a
+            formal diagnosis.<br>
+
+            References: S. Baron-Cohen, S. Wheelwright, R. Skinner, J. Martin and E. Clubley, (2001) The Autism Spectrum
+            Quotient (AQ) : Evidence from Asperger Syndrome/High Functioning Autism, Males and Females, Scientists and
+            Mathematicians Journal of Autism and Developmental Disorders 31:5-17</p></div>
+            <br><br><br><br><br><Br>
+            <footer>
+                <p class="aakhri">© 2024 EduLearn. All Rights Reserved.</p>
+            </footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

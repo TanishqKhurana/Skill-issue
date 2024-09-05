@@ -1,0 +1,817 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.navbar {
+    position: fixed;
+    padding: 0.5rem;
+    width: 100%;
+    max-height: 13%;
+    overflow: hidden;
+    font-family: "syne", sans-serif;
+    background-color: #ffffff;
+    transition: transform 0.5s ease;
+    z-index: 100;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: sticky;
+    position: relative;
+    z-index: 70;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+    transition: .3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+}
+
+.links a {
+    display: inline-block;
+    color: black;
+    margin-left: 4.5rem;
+    transition: .3s;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    transform: scale(1.1);
+}
+
+.icon img {
+    width: 25px;
+    margin: 20px;
+    transition: .3s;
+    border-radius: 0px !important;
+}
+
+.icon :hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.showcase {
+    /* background-color: black; */
+    height: calc(100vh - 100px);
+    position: relative;
+    margin-top: 50px;
+}
+
+.showCaseContainer video {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background-color: transparent;
+    height: 100vh;
+    /* margin-top: 10%; */
+}
+
+
+.text {
+    position: absolute;
+    top: 30%;
+    color: #ffffff;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    font-size: 7vw;
+    font-family: "syne", sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    overflow: hidden;
+    text-align: center;
+}
+
+.type {
+    display: flex;
+    margin-left: 90px;
+}
+
+#videoContainer {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+#myVideo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* About Us Section */
+.about-us {
+    height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.about-us h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    top: 30%;
+    position: relative;
+}
+
+.about-us p {
+    font-size: 2rem;
+    color: #666;
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 30%;
+    position: relative;
+}
+
+/* Features Section */
+.features {
+    height: 90vh;
+    padding: 50px 20px;
+    background-color: #e8f5e9;
+    text-align: center;
+    position: relative;
+    background-color: #f0f0f0;
+    /* Light grey background */
+    background-image: url('background.jpg');
+    /* Background image */
+    background-size: cover;
+    /* Make sure the image covers the section */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+}
+
+.features h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    top: 30%;
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    /* Zoom in slightly */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Add more shadow */
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+
+.how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.step:hover {
+    transform: scale(1.05);
+    /* Zoom in slightly */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Add more shadow */
+}
+
+
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.testimonial p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: rgb(106, 225, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "syne", sans-serif;
+    font-weight: lighter;
+    max-width: 100vw;
+    height: 20%;
+}
+
+
+/* Courses Page Styles */
+.courses {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f4f8;
+}
+
+.courses h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.courses p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.course-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.course-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.course-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Course Details Page */
+.course-details {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-details h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.course-details p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Course Overview */
+.course-overview {
+    margin-bottom: 40px;
+}
+
+.course-overview h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.course-overview ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-overview ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-overview .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.course-overview .btn:hover {
+    background-color: #45a049;
+}
+
+/* Interactive Syllabus */
+.syllabus {
+    margin-bottom: 40px;
+}
+
+.syllabus h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.accordion {
+    background-color: #f0f4f8;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.panel {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+/* Quiz Section */
+.quiz {
+    margin-bottom: 40px;
+}
+
+.quiz h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.quiz form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Progress Tracker */
+.progress {
+    margin-bottom: 40px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress p {
+    font-size: 18px;
+}
+
+/* Start Learning Button */
+.course-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.course-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Basic Science Course Page */
+.course-details-science {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.course-intro p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Course Overview */
+.course-overview-science {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.course-overview-science h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.course-overview-science ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-overview-science ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.btn-science {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-science:hover {
+    background-color: #004d40;
+}
+
+/* Interactive Syllabus */
+.syllabus-science {
+    margin-bottom: 40px;
+}
+
+.syllabus-science h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.accordion {
+    background-color: #e0f2f1;
+    color: #004d40;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.panel {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #b2dfdb;
+}
+
+/* Quiz Section */
+.quiz-science {
+    margin-bottom: 40px;
+}
+
+.quiz-science h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.quiz-science form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Progress Tracker */
+.progress-science {
+    margin-bottom: 40px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    background-color: #00796b;
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-science p {
+    font-size: 18px;
+    color: #00796b;
+}
+
+/* Start Learning Button */
+.course-btn-science {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.course-btn-science:hover {
+    background-color: #004d40;
+}
+
+
+/* Introduction to Math Page */
+.course-details-math {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.course-intro p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Course Overview */
+.course-overview-math {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.course-overview-math h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.course-overview-math ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-overview-math ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #004d40;
+}
+
+.btn-math {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn-math:hover {
+    background-color: #004d40;
+}
+
+/* Interactive Syllabus */
+.syllabus-math {
+    margin-bottom: 40px;
+}
+
+.syllabus-math h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.accordion {
+    background-color: #e0f2f1;
+    color: #004d40;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.panel {
+    padding: 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #b2dfdb;
+}
+
+/* Quiz Section */
+.quiz-math {
+    margin-bottom: 40px;
+}
+
+.quiz-math h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00796b;
+}
+
+.quiz-math form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Progress Tracker */
+.progress-math {
+    margin-bottom: 40px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    background-color: #00796b;
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-math p {
+    font-size: 18px;
+    color: #00796b;
+}
+
+/* Start Learning Button */
+.course-btn-math {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.course-btn-math:hover {
+    background-color: #004d40;
+}
